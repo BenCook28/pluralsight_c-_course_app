@@ -3,10 +3,6 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Book{
-
-    }
-
     class Program
     {
         static void Main(string[] args)
