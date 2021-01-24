@@ -3,7 +3,7 @@ using System;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         //constructor
         public Book(string name)
