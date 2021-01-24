@@ -14,8 +14,11 @@ namespace GradeBook.Tests
             book.AddGrade(90.5);
             book.AddGrade(77.3);
             //act
-            book.ShowStatistics();
+            var result = book.GetStatistics();
             //assert
+            Assert.Equal(85.6, result.average);
+            Assert.Equal(90.5, result.highGrade);
+            Assert.Equal(77.3, result.lowGrade);
         }
     }
 }
