@@ -98,3 +98,6 @@ C:\Users\benth\gradebook\test\GradeBook.Tests\obj\Debug\net5.0\GradeBook.Tests.d
 C:\Users\benth\gradebook\test\GradeBook.Tests\obj\Debug\net5.0\ref\GradeBook.Tests.dll
 C:\Users\benth\gradebook\test\GradeBook.Tests\obj\Debug\net5.0\GradeBook.Tests.pdb
 C:\Users\benth\gradebook\test\GradeBook.Tests\obj\Debug\net5.0\GradeBook.Tests.genruntimeconfig.cache
+C:\Users\benth\gradebook\test\GradeBook.Tests\bin\Debug\net5.0\Gradebook.exe
+C:\Users\benth\gradebook\test\GradeBook.Tests\bin\Debug\net5.0\Gradebook.dll
+C:\Users\benth\gradebook\test\GradeBook.Tests\bin\Debug\net5.0\Gradebook.pdb
