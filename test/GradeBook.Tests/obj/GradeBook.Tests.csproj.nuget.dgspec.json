@@ -4,12 +4,12 @@
     "C:\\Users\\benth\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benth\\gradebook\\src\\GradeBook\\Gradebook.csproj": {
+    "C:\\Users\\benth\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\Gradebook.csproj",
-        "projectName": "Gradebook",
-        "projectPath": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\Gradebook.csproj",
+        "projectUniqueName": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\benth\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\benth\\gradebook\\src\\GradeBook\\Gradebook.csproj": {
-                "projectPath": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\Gradebook.csproj"
+              "C:\\Users\\benth\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+                "projectPath": "C:\\Users\\benth\\gradebook\\src\\GradeBook\\GradeBook.csproj"
               }
             }
           }
