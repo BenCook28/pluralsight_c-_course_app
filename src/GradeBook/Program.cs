@@ -18,9 +18,17 @@ namespace GradeBook
                 if(input == "q"){
                     done = true;
                     continue;
-                } else {
-                    grade = double.Parse(input);
-                    book.AddGrade(grade);
+                } else 
+                {
+                    try
+                    {
+                        grade = double.Parse(input);
+                        book.AddGrade(grade);
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }                 
                 }
             } while(done == false);
 
