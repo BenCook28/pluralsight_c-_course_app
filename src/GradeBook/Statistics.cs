@@ -5,5 +5,6 @@ namespace GradeBook
         public double average;
         public double highGrade;
         public double lowGrade;
+        public char Letter;
     }
 }
