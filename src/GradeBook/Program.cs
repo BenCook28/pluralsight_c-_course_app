@@ -25,10 +25,18 @@ namespace GradeBook
                         grade = double.Parse(input);
                         book.AddGrade(grade);
                     }
-                    catch(Exception ex)
+                    catch(ArgumentException ex)
                     {
                         Console.WriteLine(ex.Message);
-                    }                 
+                    }
+                    catch(FormatException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    finally
+                    {
+                        Console.WriteLine("Make it a great day, or not, the choice is yours.");
+                    }               
                 }
             } while(done == false);
 
