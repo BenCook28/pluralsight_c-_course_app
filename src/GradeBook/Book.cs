@@ -42,7 +42,20 @@ namespace GradeBook
             throw new NotImplementedException();
         }
     }
-    
+
+
+    public class DiskBook : Book
+    {
+        public DiskBook(string name) : base(name)
+        {
+        }
+
+        public override void AddGrade(double grade)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class InMemoryBook : Book
     {
         //constructor
