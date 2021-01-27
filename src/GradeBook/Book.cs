@@ -50,8 +50,10 @@ namespace GradeBook
 
         public override void AddGrade(double grade)
         {
-            var writer = File.AppendText($"{Name}.txt");
-            writer.WriteLine(grade);
+            using(var writer = File.AppendText($"{Name}.txt"))
+            {
+                writer.WriteLine(grade);
+            } 
         }
 
         public override Statistics GetStatistics()
