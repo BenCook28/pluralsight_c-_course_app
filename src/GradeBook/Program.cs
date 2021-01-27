@@ -9,6 +9,7 @@ namespace GradeBook
         {
             var book = new Book("test book");
             book.GradeAdded += OnGradeAdded;
+            
             var input = "";
             var done = false;
             var grade = 0.0;
