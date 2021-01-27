@@ -88,6 +88,6 @@ namespace GradeBook
            private set;
        }
 
-       readonly string category = "science";
+       public const string CATEGORY = "science";
     }
 }
