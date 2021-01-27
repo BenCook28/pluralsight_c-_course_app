@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using System.IO;
 
 namespace GradeBook
 {
@@ -37,10 +38,7 @@ namespace GradeBook
 
         public abstract void AddGrade(double grade);
 
-        public virtual Statistics GetStatistics()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Statistics GetStatistics()
     }
 
 
@@ -51,6 +49,12 @@ namespace GradeBook
         }
 
         public override void AddGrade(double grade)
+        {
+            File.AppendText($"{Name}.txt");
+            File.AppendText(grade.ToString());
+        }
+
+        public override Statistics GetStatistics()
         {
             throw new NotImplementedException();
         }
