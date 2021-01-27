@@ -18,14 +18,29 @@ namespace GradeBook
           set;  
         }
     }
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStatistics();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
     
-    public abstract class Book : NamedObject
+    public abstract class Book : NamedObject, IBook
     {
         public Book(string name) : base(name)
         {
         }
 
+        public virtual event GradeAddedDelegate GradeAdded;
+
         public abstract void AddGrade(double grade);
+
+        public virtual Statistics GetStatistics()
+        {
+            throw new NotImplementedException();
+        }
     }
     
     public class InMemoryBook : Book
@@ -71,9 +86,9 @@ namespace GradeBook
             }
         }
 
-        public GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
         
-        public Statistics GetStatistics()
+        public override Statistics GetStatistics()
         {
             var result = new Statistics();
             result.highGrade = double.MinValue;
