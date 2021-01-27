@@ -7,7 +7,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            IBook book = new InMemoryBook("test book");
+            IBook book = new InMemoryBook("Ben's Grade Book");
             IBook dbook = new DiskBook("test book disk");
 
             book.GradeAdded += OnGradeAdded;

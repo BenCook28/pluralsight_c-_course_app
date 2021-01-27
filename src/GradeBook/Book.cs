@@ -38,7 +38,7 @@ namespace GradeBook
 
         public abstract void AddGrade(double grade);
 
-        public abstract Statistics GetStatistics()
+        public abstract Statistics GetStatistics();
     }
 
 
@@ -50,8 +50,8 @@ namespace GradeBook
 
         public override void AddGrade(double grade)
         {
-            File.AppendText($"{Name}.txt");
-            File.AppendText(grade.ToString());
+            var writer = File.AppendText($"{Name}.txt");
+            writer.WriteLine(grade);
         }
 
         public override Statistics GetStatistics()
